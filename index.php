@@ -8,7 +8,7 @@ try{ //hacemos nuestra conexion a la base de datos
 }
 
 $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1; //definimos la variable pagina para saber en que pagina nos encontramos
-$postPorPagina = 5; //definimos cuantos articulos queremos ver por pagina
+$postPorPagina = 1; //definimos cuantos articulos queremos ver por pagina
 
 $inicio = ($pagina > 1) ? ($pagina * $postPorPagina - $postPorPagina) : 0; //definimos desde que posición nos va a traer los articulos
 
